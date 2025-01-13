@@ -1,0 +1,167 @@
+@import "~taro-ui/dist/style/components/flex.scss";
+@import "~taro-ui/dist/style/components/list.scss";
+
+page {
+    background: #F3F4F5;
+    // background: red;
+}
+
+.adult-place-time-page {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+
+    .top-banner {
+        image {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    .day-filter {
+        display: flex;
+        flex-direction: row;
+        background: white;
+        font-size: 24px;
+        color: #5E5D5D;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        white-space: nowrap;
+        text-align: left;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        .day {
+            display: inline-block;
+            padding: 16px 20px;
+            border: 2px solid #F3F4F5;
+            text-align: center;
+            // padding-top: 16px;
+            // padding-bottom: 16px;
+            .week {
+                margin-bottom: 8px;
+            }
+            &.actived {
+                background: #52D5AA;
+                color: white;
+            }
+        }
+    }
+
+    .time-wrap {
+        display: flex;
+        flex-direction: row;
+        background: white;
+        font-size: 22px;
+        color: #5E5D5D;
+        align-items: center;
+        border-bottom: 2px solid #F3F4F5;
+        box-sizing: border-box;
+        .time-left {
+            background: #f1f9ff;
+            width: 160px;
+            padding: 26px 0px;
+            color: #5E5D5D;
+            // border: 2px solid #F3F4F5;
+            border-right: 2px solid #F3F4F5;
+        }
+        .time-right {
+            flex: 1px;
+            // border: 2px solid #F3F4F5;
+        }
+        &.actived {
+            background: #52D5AA;
+            color: white;
+        }
+        &.disabled {
+            background: #999;
+            color: black;
+        }
+    }
+
+    .content-wrap {
+        margin: 0px 20px;
+        margin-top: 20px;
+        padding: 22px;
+        background: white;
+        border-radius: 12px;
+        text-align: left;
+
+        .content-title-wrap {
+            position: relative;
+            text-align: left;
+            margin-bottom: 30px;
+            // padding: 0px 10px;
+            padding-top: 22px;
+
+            .title {
+                font-size: 32px;
+                // margin-left: 28px;
+                color: #333;
+                // font-weight: bold;
+
+                &-desc {
+                    font-weight: initial;
+                    font-size: 24px;
+                    color: #999;
+                    margin-left: 20px;
+                }
+            }
+
+            .more {
+                font-size: 21px;
+                color: #999;
+                position: absolute;
+                right: 10px;
+            }
+
+            .more-dynamic {
+                font-size: 23px;
+                color: #999;
+                position: absolute;
+                right: 10px;
+                top: 30px;
+            }
+        }
+        
+        .content {
+            padding: 30px;
+            text-align: left;
+            line-height: 48px;
+        }
+    }
+
+    .date, .time, .pay-money {
+        display: flex;
+        flex-direction: row;
+        .field-name {
+            width: 160px;
+        }
+        .field-value {
+            flex: 1;
+            text-align: right;
+            color: #999;
+        }
+    }
+
+    .time {
+        margin-top: 20px;
+    }
+
+    .pay-money {
+        margin-top: 20px;
+    }
+}
+
+
+.global-btn-wrap {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 16px 125px;
+    box-sizing: border-box;
+    background: #F9FAFB;
+}

@@ -1,0 +1,130 @@
+@import "~taro-ui/dist/style/components/flex.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/avatar.scss";
+@import "~taro-ui/dist/style/components/input.scss";
+
+page {
+    background: white;
+}
+
+.my-balance-pay {
+
+    .top-wrap {
+        padding-top: 46px;
+        text-align: center;
+
+        .pay-avatar {
+            at-avatar {
+                display: inline-block;
+            }
+        }
+
+        .pay-desc {
+            margin-top: 20px;
+            font-size: 30px;
+            color: #5E5D5D;
+            .nickname {
+                font-weight: bold;
+            }
+        }
+
+        .price {
+            font-size: 60px;
+            color: #FF0000;
+            margin-bottom: 30px;
+            margin-top: 50px;
+            padding: 0px 74px;
+            box-sizing: border-box;
+        }
+    }
+
+    .agreement-wrap {
+        position: fixed;
+        bottom: 140px;
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+        color: #999;
+        image {
+            width: 30px;
+            vertical-align: middle;
+            display: inline-block;
+            margin-right: 10px;
+            // position: relative;
+            // top: -4px;
+        }
+        .link {
+            display: inline-block;
+            color: #52D5AA;
+            font-weight: bold;
+        }
+    }
+
+    .course-list {
+        // padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 70px;
+        box-sizing: border-box;
+        .course-item {
+            flex-basis: calc(33.3% - 20px);
+            font-size: 36px;
+            color: #5E5D5D;
+            // align-items: center;
+            align-items: center;
+            line-height: 40px;
+            padding-bottom: 20px;
+            border: 2px solid #E3E4E1;
+            border-radius: 16px;
+            padding: 35px 0px;
+            text-align: center;
+            font-weight: bold;
+            &.actived {
+                border: 2px solid #52D5AA;
+                color: #52D5AA;
+            }
+        }
+    }
+
+    .reward-desc {
+        padding: 10px 70px;
+        font-size: 24px;
+        line-height: 40px;
+        color: #666;
+    }
+
+}
+
+.global-btn-wrap {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 16px 75px;
+    box-sizing: border-box;
+}
+
+
+
+.at-input {
+    margin-left: 0px;
+    .at-input__input {
+        text-align: center;
+        padding-left: 0px;
+        font-size: 44px;
+        font-weight: bold;
+    }
+}
+
+.ipt-class {
+    border: 0px;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+}
+
+.ipt-placeholder {
+    padding-left: 0px;
+    margin-left: 0px;
+    text-indent: 0px;
+}

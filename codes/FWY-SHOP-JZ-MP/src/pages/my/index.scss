@@ -1,0 +1,291 @@
+@import "~taro-ui/dist/style/components/flex.scss";
+@import "~taro-ui/dist/style/components/list.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/avatar.scss";
+@import "~taro-ui/dist/style/components/button.scss";
+
+page {
+    background: #F3F4F5;
+}
+
+.my-page {
+    padding-bottom: 20px;
+    .top-wrap {
+        // height: 200px;
+        // background: url('http://gold-shop-img.doule.me/images/buyback/apply/top-bg.png') no-repeat center top;
+        // background-size: 100% 100%;
+        background: white;
+        text-align: center;
+        padding-top: 48px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        position: relative;
+        .lf-wrap {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            line-height: 60px;
+            &-person-left {
+                width: 140px;
+                text-align: left;
+                font-size: 32px;
+                color: #333;
+                line-height: 0px;
+                position: relative;
+                image {
+                    width: 100%;
+                }
+                .nologin {
+                    display: inline-block;
+                }
+                .pic-crown {
+                    width: 36px;
+                    height: 30px;
+                    position: absolute;
+                    top: -10px;
+                    right: 20px;
+                }
+            }
+            &-person-right {
+                padding-left: 20px;
+                width: 400px;
+                line-height: 40px;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                at-button {
+                    width: 144px;
+                }
+                .person-name {
+                    display: block;
+                    font-size: 36px;
+                    letter-spacing: 1px;
+                    line-height: 35px;
+                    color: #333;
+                }
+                .person-nums {
+                    color: #999;
+                    font-size: 24px;
+                    margin-top: 12px;
+                }
+            }
+            .right-bag-pic {
+                position: absolute;
+                right: 20px;
+                bottom: 190px;
+                width: 144px;
+                height: 106px;
+            }
+        }
+
+        .join-vip-wrap {
+            position: relative;
+            left: -20px;
+            margin-top: 40px;
+            image {
+                width: 710px;
+                height: 118px;
+            }
+            .infos {
+                position: absolute;
+                top: 16px;
+                left: 0px;
+                color: #804D1F;
+                text-align: left;
+                padding-left: 20rpx;
+                .tip {
+                    font-size: 32px;
+                    font-weight: bold;
+                }
+                .advantages {
+                    font-size: 24px;
+                    margin-top: 14px;
+                    .advantage-item {
+                        display: inline-block;
+                        position: relative;
+                        image {
+                            width: 28px;
+                            height: 28px;
+                            margin-right: 6px;
+                            vertical-align: middle;
+                            position: relative;
+                            top: -4px;
+                        }
+                        &:nth-child(n+2) {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+            .btn {
+                position: absolute;
+                right: -10px;
+                bottom: 34px;
+                width: 160px;
+                height: 60px;
+                line-height: 60px;
+                color: #DBBB82;
+                font-size: 26px;
+                background: linear-gradient(90deg, #615953, #343732);
+                border-radius: 32px;
+            }
+        }
+
+        .link-wrap {
+            background: white;
+            position: absolute;
+            right: 0px;
+            top: 80px;
+            padding: 6px 24px;
+            font-size: 24px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            background: white;
+            color: #cc9656;
+            .current {
+                font-size: 30px;
+            }
+        }
+        .step-line {
+            margin-top: 40px;
+            position: relative;
+            .hor-line {
+                background: linear-gradient(90deg, #cacaca, #dbdbdb);
+                width: 100%;
+                height: 8px;
+                border-radius: 4px;
+                position: absolute;
+                top: 16px;
+                left: 0px;
+                right: 0px;
+                z-index: 0;
+                .actived {
+                    background: linear-gradient(90deg, #cc9656, #dba439);
+                    width: 30%;
+                    height: 100%;
+                    border-radius: 4px;
+                    position: absolute;
+                    z-index: 1;
+                }
+            }
+            image {
+                width: 44px;
+                position: relative;
+                z-index: 2;
+            }
+        }
+    }
+
+    .white-wrap {
+        // background: white;
+    }
+
+    .btn-wrap {
+        background: white;
+        margin: 0px 25px;
+        text-align: center;
+        position: relative;
+        // top: -20px;
+        padding: 30px 20px;
+        border-radius: 14px;
+        margin-top: 20px;
+        // box-shadow: 0px 0px 15rpx #bfcc9656;
+        box-shadow: 0px 0px 15rpx rgba(191, 204, 150, 0.34);
+        color: #333;
+        .title-wrap {
+            text-align: left;
+            position: relative;
+            border-bottom: 1px solid #F7F7F7;
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+            .title {
+                font-size: 30px;
+                font-weight: bold;
+                color: #333;
+            }
+            .more-order-btn {
+                position: absolute;
+                top: 4px;
+                right: 0px;
+                font-size: 24px;
+                color: #999;
+            }
+        }
+        .un-line {
+            border-bottom: 0px;
+            margin-bottom: 16px;
+        }
+        .row-line2 {
+            margin-top: 40px;
+        }
+        image {
+            height: 55px;
+            width: 55px;
+        }
+        .btn-go-text {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    }
+
+    .my-order {
+        image {
+            width: 48px;
+            height: 48px;
+        }
+    }
+
+    .my-tool {
+        text-align: left;
+        margin-left:26px;
+        image {
+            width: 72px;
+            height: 72px;
+        }
+        .at-col2 {
+            width: 80px;
+        }
+    }
+
+    .my-service {
+        image {
+            width: 44px;
+            height: 44px;
+        }
+    }
+}
+.contact-btn {
+    position: relative;
+    button, contact-button {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 1;
+        background: salmon;
+        opacity: 0;
+    }
+}
+
+.at-button {
+    height: initial;
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.logout-btn {
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 20px;
+    font-size: 28px;
+    color: #52D5AA;
+    box-shadow: 0 0 15px rgba(191, 204, 150, 0.34);
+    margin: 0 25px;
+    margin-top: 20rpx;
+    border-radius: 14px;
+}

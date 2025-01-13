@@ -1,0 +1,132 @@
+@import "~taro-ui/dist/style/components/flex.scss";
+@import "~taro-ui/dist/style/components/rate.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/tabs.scss";
+@import "~taro-ui/dist/style/components/avatar.scss";
+@import "~taro-ui/dist/style/components/article.scss";
+@import "~taro-ui/dist/style/components/card.scss";
+page {
+    background: white;
+}
+
+.zixun-detail-page {
+    padding-bottom: 60px;
+    .zixun-btn{
+        background: white;
+        position: fixed;
+        bottom: 0px;
+        height: 60px;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 10px;
+    }
+    .box-view {
+        .content-title-wrap {
+            position: relative;
+            text-align: left;
+            margin-bottom: 30px;
+            padding: 0px 10px;
+            padding-top: 22px;
+            image {
+              width: 48px;
+              height: 48px;
+              margin-right:10px;
+              margin-top:-4px;
+              vertical-align: top;
+            }
+            .title {
+              font-size: 32px;
+              color: #1D1D1E;
+              font-weight: bold;
+              margin-left: 4px;
+              &-desc {
+                font-weight: initial;
+                font-size: 24px;
+                color: #999;
+                margin-left: 20px;
+              }
+            }
+          }
+    }
+}
+.question-list{
+    padding: 10px 10px;
+    .question-item{
+        padding: 10px;
+        .question-title{
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #F3F4F5;
+        }
+        .question-answer{
+            margin-top: 10px;
+            padding-top: 10px;
+            border-bottom: 1px solid #F3F4F5;
+            .avatar{
+                display: inline-flex;
+            }
+            .name{
+                padding-left:16px;
+                display: inline;
+                margin:auto 0;
+            }
+            .content{
+                margin-top: 10px;
+                padding-bottom: 6px;
+                .text{
+                    font-size:28rpx;
+                    color:#999;
+                    line-height: 40rpx;
+                }
+               
+            }
+        }
+    }
+}
+.pic-list {
+    margin: 30px 20px;
+    box-sizing: border-box;
+    .flex-layout {
+        //justify-content: space-between;
+        display:inline-flex;
+        .pic-item {
+            //border: 2px solid #ddd;
+            padding: 14px;
+            box-sizing: border-box;
+           // flex-basis: 40%;
+            margin-bottom: 16px;
+            width: 220px;
+            .name {
+                font-size: 30px;
+                text-align: center;
+                letter-spacing: 4px;
+            }
+            .infos {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .tags {
+                    flex: 1;
+                    font-size: 20px;
+                    .tag {
+                        border: 2px solid #999;
+                        color: #999;
+                        padding: 6px 12px;
+                        border-radius: 12px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+                .like {
+                    width: 100px;
+                    color: #999;
+                    text-align: right;
+                }
+            }
+        }
+    }
+    
+}
+

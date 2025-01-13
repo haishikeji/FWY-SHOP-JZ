@@ -1,0 +1,116 @@
+@import "~taro-ui/dist/style/components/flex.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/input.scss";
+
+page {
+  background: white;
+}
+
+.reg-container {
+  background: white;
+  padding: 0px 80px;
+  padding-top: 130px;
+  .reg-logo {
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+    display: block;
+    margin: 0px auto 20px auto;
+  }
+  .reg-logo-title {
+    font-size: 46px;
+    color: #2d8cf0;
+    text-align: center;
+    margin: 0px auto 70px auto;
+  }
+  .real-width {
+    width: 100%;
+  }
+  .mt20 {
+    margin-top: 20px;
+  }
+  .pwd {
+    position: relative;
+    .see {
+      display: inline-block;
+      position: absolute;
+      right: 20px;
+      top: 16px;
+      z-index: 9;
+      image {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  .forget-text {
+    text-align: right;
+    color: #999999;
+    font-size: 28px;
+    .forget-btn {
+      display: inline-block;
+    }
+  }
+  .valicode-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    .valicode-ipt-wrap {
+      flex: 1;
+      padding-right: 20px;
+    }
+    .valicode-btn {
+      width: 208px;
+      height: 100px;
+      // padding-top: 8px;
+      button {
+        background: white;
+        color: #2d8cf0;
+        border-radius: 7px;
+        font-size: 29px;
+        &:after {
+          display: inline-block;
+          border-color: #2d8cf0;
+        }
+        &.border {
+          display: inline-block;
+          border: 1px solid #2d8cf0;
+        }
+        &.swan-sms-btn {
+          width: 100%;
+          border: 2px solid #2d8cf0;
+        }
+        &.tt-sms-btn {
+          width: 100%;
+          // border: 2px solid #cc9656;
+          padding: 7px 0px;
+        }
+      }
+      .no-border {
+        border-color: initial;
+      }
+      .ali-border {
+        width: 100%;
+        display: inline-block;
+        border: 1px solid #2d8cf0;
+      }
+    }
+  }
+}
+
+.at-input {
+  padding: 15px 0;
+  margin-left: 0px;
+  &:after {
+    display: none;
+  }
+  input {
+    font-size: 28px;
+  }
+}
+.ipt-class {
+  border-bottom: 1px solid #ddd;
+  border-radius: 7px;
+  padding-left: 26px;
+}

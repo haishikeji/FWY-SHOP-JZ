@@ -1,0 +1,147 @@
+@import "~taro-ui/dist/style/components/flex.scss";
+@import "~taro-ui/dist/style/components/tabs.scss";
+
+page {
+    background: #f4f4f4;
+}
+.my-appointment {
+    background: #f4f4f4;
+    .content-wrap {
+        margin: 0px 20px;
+        margin-top: 20px;
+        padding: 12px 22px 32px 22px;
+        background: white;
+        border-radius: 12px;
+
+        .content-title-wrap {
+            position: relative;
+            text-align: left;
+            margin-bottom: 30px;
+            // padding: 0px 10px;
+            padding-top: 22px;
+
+            .title {
+                font-size: 32px;
+                // margin-left: 28px;
+                color: #1D1D1E;
+                font-weight: bold;
+
+                &-desc {
+                    font-weight: initial;
+                    font-size: 24px;
+                    color: #999;
+                    margin-left: 20px;
+                }
+            }
+
+            .more {
+                font-size: 21px;
+                color: #999;
+                position: absolute;
+                right: 10px;
+            }
+
+            .more-dynamic {
+                font-size: 23px;
+                color: #999;
+                position: absolute;
+                right: 10px;
+                top: 30px;
+            }
+        }
+
+        .lf-wrap {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            line-height: 70px;
+            // max-height: 200px;
+            padding-top: 20px;
+            position: relative;
+            &-goods-left {
+                width: 230px;
+                text-align: left;
+                font-size: 32px;
+                color: #333;
+                image {
+                    width: 230px;
+                    height: 130px;
+                    vertical-align: top;
+                }
+            }
+            &-goods-right {
+                padding-left: 20px;
+                line-height: 40px;
+                flex: 1;
+                text-align: left;
+                position: relative;
+                .name {
+                    font-size: 32px;
+                    font-weight: bold;
+                }
+                .desc {
+                    font-size: 24px;
+                    color: #999;
+                    margin-top: 4px;
+                    &.time {
+                        margin-top: 20px;
+                    }
+                }
+                .coll {
+                    color: #5E5D5D;
+                    font-size: 26px;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 20px;
+                    image {
+                        width:28px;
+                        height:28px;
+                        margin-right: 10px;
+                        vertical-align: middle;
+                        position: relative;
+                        top: -4px;
+                    }
+                }
+                .btns {
+                    position: relative;
+                    right: 0px;
+                    bottom: -10px;
+                    text-align: right;
+                    font-size: 24px;
+                    .btn {
+                        display: inline-block;
+                        padding: 4px 22px;
+                        background: #52D5AA;
+                        border-radius: 50px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.no-data-wrap {
+    height: calc(100vh - 90px);
+    background: white;
+}
+
+.at-tabs {
+    &__item {
+        color: #5E5D5D;
+        &--active {
+            color: #52D5AA;
+        }
+        &-underline {
+            width: 64px;
+            margin: 0px auto;
+            right: 0;
+            bottom: 0px;
+            height: 6px;
+            background: #52D5AA;
+            border-radius: 2px;
+        
+        }
+    }
+    border-bottom: 2px solid #F3F4F5;
+}

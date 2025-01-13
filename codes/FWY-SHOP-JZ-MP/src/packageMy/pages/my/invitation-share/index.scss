@@ -1,0 +1,79 @@
+@import "~taro-ui/dist/style/components/flex.scss";
+
+page {
+    background: white;
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.my-invitation-page {
+
+    .swiper-block {
+        margin-top: 40px;
+        height: 800px;
+        width: 100%;
+    }
+
+    .swiper-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: unset;
+        text-align: center;
+    }
+
+    .slide-image {
+        width: 398px;
+        height: 706px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 10px 0px rgba(51, 51, 51, 0.3);
+        margin: 0px 30px;
+        z-index: 1;
+    }
+
+    .active {
+        transform: scale(1.1);
+        transition: all 0.2s ease-in 0s;
+        z-index: 20;
+    }
+
+    .share-desc {
+        margin-top: 40px;
+        padding: 20px 40px;
+        .title {
+            font-size: 30px;
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .desc {
+            font-size: 24px;
+            color: #999;
+        }
+    }
+
+}
+
+.global-btn-wrap {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 16px 75px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.share-btn {
+    padding: 0px;
+    line-height: initial;
+    background: transparent !important;
+    border: 0px;
+    font-size: initial;
+    &:after {
+        border: 0px;
+    }
+}

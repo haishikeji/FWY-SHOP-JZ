@@ -1,0 +1,91 @@
+@import "~taro-ui/dist/style/components/flex.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/avatar.scss";
+
+page {
+    background: white;
+}
+
+.my-deposit-extract {
+
+    .top-wrap {
+        padding: 46px 60px;
+        text-align: left;
+
+        .pay-avatar {
+            at-avatar {
+                display: inline-block;
+            }
+        }
+
+        .pay-desc {
+            margin-top: 20px;
+            font-size: 30px;
+            color: #5E5D5D;
+            .nickname {
+                font-weight: bold;
+            }
+        }
+
+        .price {
+            font-size: 60px;
+            color: #FF0000;
+            margin-bottom: 30px;
+            margin-top: 50px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+    }
+
+    .extract-wrap {
+        width: 100%;
+        font-size: 30px;
+        text-align: left;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .desc-wrap {
+        width: 100%;
+        font-size: 24px;
+        text-align: left;
+        color: #999;
+        .tip {
+            display: inline-block;
+            color: #FF0000;
+            font-weight: bold;
+        }
+    }
+
+    .agreement-wrap {
+        position: fixed;
+        bottom: 140px;
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+        color: #999;
+        image {
+            width: 30px;
+            vertical-align: middle;
+            display: inline-block;
+            margin-right: 10px;
+            // position: relative;
+            // top: -4px;
+        }
+        .link {
+            display: inline-block;
+            color: #52D5AA;
+            font-weight: bold;
+        }
+    }
+
+}
+
+.global-btn-wrap {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 16px 75px;
+    box-sizing: border-box;
+}

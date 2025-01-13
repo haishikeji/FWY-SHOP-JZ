@@ -1,0 +1,366 @@
+$at-tabs-color-active: #333;
+
+@import "~taro-ui/dist/style/components/flex.scss";
+@import "~taro-ui/dist/style/components/tabs.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/float-layout.scss";
+@import "~taro-ui/dist/style/components/badge.scss";
+
+page {
+    height: 100%;
+}
+
+.category-page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .top-wrap {
+        height: 140px;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        .welcome {
+            font-size: 36px;
+            color: #333;
+        }
+        .address {
+            font-size: 24px;
+            color: #5E5D5D;
+            margin-top: 20px;
+            position: relative;
+            left: -4px;
+            image {
+                width: 30px;
+                vertical-align: middle;
+                margin-right: 6px;
+                position: relative;
+                top: -4px;
+            }
+        }
+    }
+
+    .ad-wrap {
+        height: 210px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        image {
+            width: 710px;
+        }
+    }
+
+    .content {
+        // flex: 1;
+        position: relative;
+        height: calc(100% - 500px);
+
+        .diy-scroll {
+            height: 100%;
+        }
+    }
+
+    .record-wrap {
+        // padding: 25px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 180px;
+        height: 100%;
+        .lf-wrap {
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            line-height: 70px;
+            &-goods-left {
+                width: 128px;
+                height: 128px;
+                text-align: left;
+                font-size: 32px;
+                color: #333;
+                image {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 8px;
+                }
+            }
+            &-goods-right {
+                position: relative;
+                padding-left: 20px;
+                line-height: 40px;
+                flex: 1;
+                .goods-name {
+                    font-size: 30px;
+                    color: #000;
+                }
+                .text-price {
+                    color: #FF0000;
+                    font-size: 32px;
+                    font-weight: bold;
+                    margin-top: 12px;
+                    position: relative;
+                    image {
+                        width:24px;
+                        height:24px;
+                        margin-left: 10px;
+                    }
+                    .price-symbol {
+                        font-size: 20px;
+                    }
+                    .goods-nums {
+                        color: #979797;
+                        font-size: 30px;
+                        display: inline-block;
+                        margin-left: 34px;
+                        font-weight: 300;
+                        position: absolute;
+                        right: 10px;
+                    }
+                    .un-price {
+                        display: inline-block;
+                        font-size: 24px;
+                        color: #999;
+                        text-decoration: line-through;
+                        margin-left: 10px;
+                        font-weight: initial;
+                    }
+                }
+                .bottom-wrap {
+                  position: absolute;
+                  bottom: 0px;
+                  right: 20px;
+                  image {
+                      width: 52px;
+                      vertical-align: middle;
+                  }
+                  .foot-num {
+                      margin: 0px 20px;
+                      font-size: 32px;
+                      color: #333333;
+                      position: relative;
+                      top: 4px;
+                  }
+                  .stu-welfare {
+                    font-size: 24px;
+                    background: #2cb376;
+                    color: white;
+                    padding: 4px 10px;
+                    border-radius: 6px;
+                    display: inline-block;
+                    margin-right: 10px;
+                  }
+                }
+            }
+        }
+        .item {
+            background: white;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            // padding-left: 25px;
+            // padding-right: 25px;
+            // padding-top: 36px;
+            // padding-bottom: 36px;
+            border-radius: 17px;
+            .row-wrap {
+                box-sizing: border-box;
+                padding-top: 20px;
+                .title {
+                    display: inline-block;
+                    font-size: 32px;
+                    color: #333333;
+                    letter-spacing: 2px;
+                    margin-right: 10px;
+                }
+            }
+            .right-btns {
+                text-align: right;
+                margin-top: 10px;
+                .action-btn {
+                    display: inline-block;
+                    border-radius: 66px;
+                    border: 2px solid #cc9656;
+                    text-align: center;
+                    padding: 18px 30px;
+                    font-size: 26px;
+                    letter-spacing: 3px;
+                    color: #cc9656;
+                    background: #fdf6f0;
+                    min-width: 120px;
+                    &-white {
+                        color: #cc9656;
+                        background: #ffffff;
+                    }
+                    &:not(:first-child) {
+                        margin-left: 20px;
+                    }
+                }
+            }
+            .title-wrap {
+                border-bottom: 1px solid #e0e0e0;
+                padding-bottom: 36px;
+                .title {
+                    font-size: 32px;
+                    color: #333333;
+                    letter-spacing: 2px;
+                }
+                .right-value {
+                    font-size: 32px;
+                    color: #cc9656;
+                    letter-spacing: 2px;
+                    text-align: right;
+                }
+                image {
+                    width: 36px;
+                    height: 35px;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+        }
+    }
+}
+.at-tabs__header {
+    background: #F3F4F5;
+    &:-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        color: transparent;
+    }
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        color: transparent;
+    }
+}
+.at-tabs__item {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    color: #666;
+    background: #F3F4F5;
+    &--active {
+        color: white;
+        font-weight: bold;
+        background: #52D5AA;
+    }
+    &-underline {
+        display: none !important;
+        // left: 8px !important;
+        // right: auto !important;
+        // width: 6px !important;
+        // top: 34px !important;
+        // bottom: auto !important;
+        // height: 40% !important;
+        // border-radius: 8px !important;
+        // background: #DE901B !important;
+    }
+}
+
+.global-btn-wrap {
+    height: 114px;
+    // position: fixed;
+    // bottom: 0px;
+    // left: 0px;
+    width: 100%;
+    padding: 16px 25px;
+    box-sizing: border-box;
+    background: white;
+    text-align: right;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    .car {
+        text-align: left;
+        padding-top: 4px;
+        padding-left: 20px;
+        color: #8A8A8A;
+        .car-text {
+            font-size: 20px;
+        }
+    }
+}
+
+.at-float-layout__container {
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
+}
+.dialog-title-wrap {
+    border-bottom: 0px !important;
+    padding: 0px !important;
+}
+.dialog-scroll {
+    height: 700px; 
+}
+.dialog-content-wrap {
+    text-align: left !important;
+    max-height: initial !important;
+    padding-top: 30px;
+    // padding-bottom: 400px;
+    .food-img {
+        text-align: center;
+        margin-bottom: 30px;
+        image {
+            width: 400px;
+            border-radius: 16px;
+        }
+    }
+    .food-infos {
+        position: relative;
+        line-height: 40px;
+        flex: 1;
+        .food-name {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 36px;
+            color: #333;
+        }
+        .food-price {
+            color: #FF0000;
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 12px;
+            position: relative;
+            image {
+                width:24px;
+                height:24px;
+                margin-left: 10px;
+            }
+            .price-symbol {
+                font-size: 20px;
+            }
+            .goods-nums {
+                color: #979797;
+                font-size: 30px;
+                display: inline-block;
+                margin-left: 34px;
+                font-weight: 300;
+                position: absolute;
+                right: 10px;
+            }
+            .un-price {
+                display: inline-block;
+                font-size: 24px;
+                color: #999;
+                text-decoration: line-through;
+                margin-left: 10px;
+                font-weight: initial;
+            }
+        }
+    }
+    .divider {
+        height: 2px;
+        margin-top: 20px;
+        background: #F7F7F7;
+    }
+    .food-desc {
+        font-size: 29px;
+        margin-top: 20px;
+        .desc-title {
+            font-weight: bold;
+            color: #333;
+        }
+        .desc-content {
+            margin-top: 20px;
+            // height: 200px;
+            color: #5E5D5D;
+        }
+    }
+}
+

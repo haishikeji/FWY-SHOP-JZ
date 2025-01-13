@@ -1,0 +1,58 @@
+
+.pay-result-page {
+    
+    .top-wrap {
+        width: 100%;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #000;
+        text-align: center;
+        .result {
+            font-size: 56px;
+            font-weight: bold;
+        }
+        .total-price {
+            margin-top: 40px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #5E5D5D;
+        }
+    }
+
+    .pay-btns {
+        position: absolute;
+        bottom: 0px;
+        left: 90px;
+        right: 90px;
+        padding: 20px 0px;
+        padding-bottom: 70px;
+        font-size: 28px;
+        global-btn {
+            .text {
+                font-weight: bold;
+            }
+        }
+        .go-order-btn {
+            width: 100%;
+            padding-top: 22px;
+            padding-bottom: 22px;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 50px;
+            box-sizing: border-box;
+            margin-top: 40px;
+            border: 2px solid #d2d2d2;
+            .text {
+                font-size: 28px;
+                color: white;
+                -webkit-background-clip: text;
+                background-clip: text;
+                text-shadow: 3px 2px 3px #bfcc9656;
+                letter-spacing: 3px;
+            }
+        }
+    }
+    
+}

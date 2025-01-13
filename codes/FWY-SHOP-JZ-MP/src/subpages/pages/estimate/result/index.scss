@@ -1,0 +1,98 @@
+@import "~taro-ui/dist/style/components/flex.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/input.scss";
+@import "~taro-ui/dist/style/components/checkbox.scss";
+@import "~taro-ui/dist/style/components/button.scss";
+@import "~taro-ui/dist/style/components/input-number.scss";
+@import "~taro-ui/dist/style/components/drawer.scss";
+@import "~taro-ui/dist/style/components/list.scss";
+page {
+  background: #fff;
+  height: 100%;
+}
+
+.bank-card-add {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //justify-content: center;
+  min-height: 100%;
+  // TODO 图片
+  background-image: url("http://zycimg.106tec.com/weapp-standard-back.jpg");
+  background-size: 100% 100%;
+  .result-box {
+    margin: 230px 20px;
+    width: 80%;
+    height: 400px;
+    border: 1px solid #52d5aa;
+    display: inline-block;
+    padding-top: 80px;
+    text-align: center;
+    position: relative;
+    .green {
+      color: forestgreen;
+    }
+    .red {
+      color: red;
+    }
+    .result {
+      text-align: center;
+      font-size: 58px;
+      letter-spacing: 20px;
+      font-weight: bold;
+    }
+    .link-info {
+      padding-top: 30px;
+      text-align: center;
+      letter-spacing: 6px;
+      color: royalblue;
+    }
+  }
+}
+.filter-btn-list {
+  width: 380px;
+  height: 60px;
+  margin: 0px auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  .btn {
+    padding: 0px 40px;
+    display: inline;
+    height: 80px;
+    button {
+      background: white;
+      color: #52d5aa;
+      border-radius: 7px;
+      font-size: 28px;
+      letter-spacing: 6px;
+      &:after {
+        display: inline-block;
+        border-color: #52d5aa;
+      }
+      &.border {
+        display: inline-block;
+        border: 1px solid #52d5aa;
+      }
+      &.swan-sms-btn {
+        width: 100%;
+        border: 2px solid #52d5aa;
+      }
+      &.tt-sms-btn {
+        width: 100%;
+        // border: 2px solid #cc9656;
+        padding: 7px 0px;
+      }
+    }
+    .no-border {
+      border-color: initial;
+    }
+    .ali-border {
+      width: 100%;
+      display: inline-block;
+      border: 1px solid #52d5aa;
+    }
+  }
+}

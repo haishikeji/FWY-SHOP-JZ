@@ -1,0 +1,230 @@
+@import "~taro-ui/dist/style/components/flex.scss";
+@import "~taro-ui/dist/style/components/list.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/avatar.scss";
+
+page {
+    background: #fff;
+}
+
+.my-vip {
+    padding-bottom: 120px;
+    .bg-wrap {
+        height: 340px;
+        padding: 50px 30px 30px 30px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        .bg {
+            width: 150%;
+            height: 100%;
+            background: #343645;
+            -webkit-clip-path: inset(0% 0 20% 0 round 0 0 50% 50%);
+            position: absolute;
+            top: 0;
+            box-sizing: border-box;
+            left: -25%;
+            right: -25%;
+            overflow: hidden;
+        }
+        .top-wrap {
+            // height: 200px;
+            background: url('http://bookclub-imgs.doule.me/imgs/my/pic-my-vip-bg.png') no-repeat center top;
+            // background-color: #39D6A4;
+            background-size: 100% 100%;
+            text-align: center;
+            padding-top: 48px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 40px;
+            position: relative;
+            border-radius: 30px;
+            height: 140px;
+
+
+            width: 640px;
+            margin-left: 18%;
+            top: 70px;
+            
+
+            .lf-wrap {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                line-height: 60px;
+                &-person-left {
+                    width: 140px;
+                    text-align: left;
+                    font-size: 32px;
+                    color: white;
+                    line-height: 0px;
+                    position: relative;
+                    image {
+                        width: 100%;
+                    }
+                    .nologin {
+                        display: inline-block;
+                    }
+                    .pic-crown {
+                        width: 36px;
+                        height: 30px;
+                        position: absolute;
+                        top: -10px;
+                        right: 20px;
+                    }
+                }
+                &-person-right {
+                    padding-left: 10px;
+                    line-height: 40px;
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .person-name {
+                        display: block;
+                        font-size: 36px;
+                        letter-spacing: 1px;
+                        line-height: 35px;
+                        color: white;
+                    }
+                    .expired-time {
+                        color: white;
+                        font-size: 24px;
+                        margin-top: 16px;
+                    }
+                    .course-time {
+                        margin-top: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .pt70 {
+        padding-top: 60px;
+    }
+
+    .block-wrap {
+
+        .title-wrap {
+            font-size: 36px;
+            color: #333;
+            justify-content: center;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            image {
+                width: 36px;
+                height: 18px;
+            }
+            .arrow-left {
+                margin-right: 20px;
+            }
+            .arrow-right {
+                margin-left: 16px;
+            }
+        }
+
+        .vip-list {
+            padding: 20px;
+            padding-top: 0px;
+            box-sizing: border-box;
+            white-space: nowrap;
+            .vip-item {
+                width: 136px;
+                padding: 25px 40px;
+                text-align: center;
+                position: relative;
+                display: inline-block;
+                border: 4px solid #E3E1E1;
+                border-radius: 8px;
+                margin-right: 20px;
+                background: #fff;
+                margin-top: 40px;
+                &:nth-last-child(1) {
+                    margin-right: 0px;
+                }
+                &.actived {
+                    background: #F9FEFC;
+                    border: 4px solid #52D5AA;
+                    box-sizing: border-box;
+                }
+                .recommend {
+                    position: absolute;
+                    left: -10px;
+                    top: -40px;
+                    color: #fff;
+                    font-size: 24px;
+                    text-align: center;
+                    display: inline-block;
+                    image {
+                        width: 148px;
+                        height: 42px;
+                    }
+                    .text {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 4px;
+                    }
+                }
+                .name {
+                    color: #333;
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+                .price {
+                    color: #52D5AA;
+                    font-size: 44px;
+                    margin-top: 10px;
+                    .short-symbol {
+                        font-size: 30px;
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+
+        .peculiaritys {
+            margin: 20px;
+            margin-top: 0px;
+            padding: 10px;
+            background: #f7f7f7;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .peculiarity {
+                flex-basis: calc(25% - 20px);
+                color: #333;
+                font-size: 24px;
+                position: relative;
+                .chk-icon {
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    border: 2px solid #979797;
+                    background: #D8D8D8;
+                    vertical-align: middle;
+                    margin-right: 6px;
+                    position: relative;
+                    top: -2px;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+
+
+    .global-btn-wrap {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        padding: 16px 125px;
+        box-sizing: border-box;
+        background: #F9FAFB;
+    }
+    
+
+}

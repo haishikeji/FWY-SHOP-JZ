@@ -1,0 +1,106 @@
+@import "~taro-ui/dist/style/components/flex.scss";
+
+page {
+    background: white;
+}
+
+.my-deposit {
+    padding-bottom: 120px;
+
+    .top-wrap {
+        height: 280px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #52D5AA;
+        color: white;
+        .left {
+            flex: 1;
+            padding-left: 40px;
+            padding-top: -100px;
+            .title {
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .price {
+                margin-top: 12px;
+                font-size: 60px;
+            }
+        }
+        .right {
+            width: 120px;
+            text-align: right;
+            font-size: 24px;
+            padding-right: 20px;
+        }
+    }
+
+    .deposit-desc {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+        font-size: 24px;
+        color: #999;
+    }
+
+    .history-wrap {
+        padding: 10px 20px;
+        margin-top: 40px;
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333333;
+            border-bottom: 2px solid #F7F7F7;
+            padding-bottom: 30px;
+        }
+        .records {
+            .item {
+                padding: 40px 0px;
+                border-bottom: 2px solid #F7F7F7;
+                display: flex;
+                flex-direction: row;
+                justify-items: center;
+                .left {
+                    flex: 1;
+                    .type-title {
+                        font-size: 30px;
+                        color: #5E5D5D;
+                        font-weight: bold;
+                    }
+                    .time {
+                        margin-top: 12px;
+                        font-size: 24px;
+                        color: #999;
+                    }
+                }
+                .right {
+                    width: 200px;
+                    text-align: right;
+                    .money {
+                        font-size: 30px;
+                        color: #FF0000;
+                    }
+                    .subtract {
+                        color: #5E5D5D;
+                    }
+                    .balance {
+                        margin-top: 12px;
+                        font-size: 24px;
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+
+    .global-btn-wrap {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        padding: 16px 75px;
+        box-sizing: border-box;
+        // background: #F9FAFB;
+    }
+
+}
